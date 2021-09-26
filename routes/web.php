@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('articles', ArticleController::class);
+// Route::get('/', [ArticleController::class, 'index']);
+
+Route::resource('articles', ArticleController::class)
+->middleware('auth');
+
+// Route::redirect('/', route('articles.index'), 302);
 
 Auth::routes();
 

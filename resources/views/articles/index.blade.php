@@ -26,7 +26,7 @@
     @endif
     <hr>
     <h1>自分の記事一覧</h1>
-     @if (!empty($my_articles))
+    @if (!empty($my_articles))
         <ul>
             @foreach ($my_articles as $article)
                 <li>
