@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article-block {
+    width: 100%;
+    padding: 32px;
+    background-color: #fff;
+}
+
+.icon {
+    width: 100%;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 24px;
+}
+
+.post-status {
+    display: flex;
+    height: 24px;
+}
+
+.post-status p {
+    margin-left: 16px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.post-status a {
+    color: #000;
+    font-weight: 700;
+}
+
+h1 {
+    display: block;
+    margin-top: 8px;
+    font-size: 32px;
+}
+
+.tags {
+    margin-top: 8px;
+    margin-bottom: 48px;
+    font-size: 14px;
+}
+
+.button-block {
+    display: flex;
+    margin-left: 24px;
+}
+
+.btn{
+    display: block;
+    margin: 16px 10px 16px 0;
+    padding: 8px 20px;
+    border: none;
+    background-color: #55C500;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #1E8AFF;
+    margin-left: auto;
+}
+
+.delete-button {
+    background-color: red;
+}
